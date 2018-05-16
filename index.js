@@ -1,5 +1,9 @@
-const Discord = require('discord.js')
-const bot = new Discord.client()
+const Discord = require('discord.js');
+const bot = new Discord.client();
 
-bot.login(process.env.TOKEN)
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+bot.login(process.env.TOKEN);
 
